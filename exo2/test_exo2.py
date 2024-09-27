@@ -2,6 +2,7 @@ import unittest
 
 from exo2 import Test
 
+
 class TestSolution(unittest.TestCase):
     
     def test_fixed_true(self):
@@ -29,6 +30,7 @@ class TestSolution(unittest.TestCase):
         for string, ending in fixed_tests_False:
             with self.subTest(f"Testing {string} does not end with {ending}"):
                 self.assertFalse(Test.solution(string, ending))
+
 
 if __name__ == '__main__':
     unittest.main()
